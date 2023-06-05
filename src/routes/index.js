@@ -6,7 +6,7 @@ const routes = (app) => {
     res.status(200).send({ titulo: "Curso de Node" });
   });
 
-  app.use(express.json, router);
+  app.use(express.json(), router);
 };
 
 export default routes;

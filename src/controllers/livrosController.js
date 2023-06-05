@@ -7,7 +7,7 @@ class LivroController {
       return res.status(200).json(pegaTodosLivros);
     } catch (err) {
       return res
-        .status(500)
+        .status(400)
         .json({ menssage: `${err.message} - Falha ao localizar livros.` });
     }
   };
